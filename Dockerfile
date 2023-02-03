@@ -2,7 +2,7 @@ FROM node:14-alpine3.15
 
 WORKDIR /usr/src/app
 
-#RUN cp -v /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem /etc/ssl/certs/ca-certificates.crt
+RUN cp -v /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem /etc/ssl/certs/ca-certificates.crt
 
 RUN apk update && apk add --no-cache python2 g++ make 
 
