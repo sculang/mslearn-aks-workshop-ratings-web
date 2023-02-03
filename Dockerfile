@@ -4,6 +4,8 @@ WORKDIR /usr/src/app
 
 RUN cp -v /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem /etc/ssl/certs/ca-certificates.crt
 
+ENV NODE_EXTRA_CA_CERTS /etc/ssl/certs/ca-certificates.crt
+
 RUN apk update && apk add --no-cache python2 g++ make 
 
 # Install node dependencies - done in a separate step so Docker can cache it
