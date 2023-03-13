@@ -17,7 +17,7 @@
         <at-button @click="link('Rating')" icon="icon-star" class="mid-btn" type="primary"  hollow>Start Rating</at-button>
       </div>
       <div class="col-lg-6">
-        <at-button @click="link('Leaderboard')" icon="icon-bar-chart-2" class="mid-btn" type="success" hollow>View Leaderboard2</at-button>
+        <at-button @click="link('Leaderboard')" icon="icon-bar-chart-2" class="mid-btn" type="success" hollow>View Leaderboard</at-button>
       </div>
       <div class="col-lg-6">
         <a href="https://github.com/MicrosoftDocs/mslearn-aks-workshop-ratings-web" target="_blank"><at-button icon="icon-github" class="mid-btn" type="info" hollow>Clone This Code</at-button></a>
